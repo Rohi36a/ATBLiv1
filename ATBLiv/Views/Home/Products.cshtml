@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+
+@{
+    ViewBag.Title = "Products";
+    Layout = null;
+}
+@Html.Raw(TempData["msg"])
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arise Tech Solutions Theme</title>
+    <link rel="stylesheet" href="~/Content/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Content/bootstrap.css">
+    <link rel="stylesheet" href="~/Content/style.css">
+    <style>
+        center1 {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100px;
+        }
+    </style>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            /*border: 1px solid #e7e7e7;*/
+            /*background-color: #f3f3f3;*/
+        }
+
+        li {
+            float: left;
+        }
+
+            li a {
+                display: block;
+                color: #b6ff00;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                li a:hover:not(.active) {
+                    background-color: #ddd;
+                }
+
+                li a.active {
+                    color: white;
+                    background-color: #4CAF50;
+                }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container">
+            <!-- <a href="index.html" class="navbar-brand">Arise Tech Solutions</a> -->
+            <section>
+                <div class="col-lg-2">
+                    <img class="logo" src="~/Img/mainlogo.png" height="100" width="100">
+                </div>
+            </section>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Arise Tech Solutions-navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="Arise Tech Solutions-navbar" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li>
+                        @Html.ActionLink("Home", "Home", "Home")
+                    </li>
+                    <li>
+                        @Html.ActionLink("About", "About", "Home")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Services", "Services", "Home")
+                    </li>
+                    <li class="active">
+                        @Html.ActionLink("Products", "Products", "Home")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Partners", "Partners", "Home")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Contact", "Contact", "Home")
+                    </li>
+                </ul>
+            </div> <!-- #Arise Tech Solutions-navbar -->
+        </div> <!-- container -->
+    </nav>
+
+
+
+
+    <!-- BLOG HERO-->
+    <section id="services" class="p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-left">
+                    <h1>Products</h1>
+                    @*<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, saepe.</p>*@
+                </div> <!-- .col -->
+            </div> <!-- .row -->
+        </div> <!-- .container -->
+    </section>
+    <br>
+    <section class="section-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <!-- <h2 class="page-header">Read Our Blog</h2> -->
+                    <div class="card p-3 bg-danger text-white">
+                        <h2 class="page-header">School Management Software</h2>
+                        <img src="~/Img/Products/sms22.png" class="serv1">
+                        <p>
+                            A school management software is a tool that is specifically designed to streamline the paperless administration of schools
+                            and educational institutions. It consists of various modules that greatly help the teachers and staff in
+                            maintaining student records, academic history, and other essential student information.
+                            An efficient school management system acts as a unifier for the different departments/functions and can be accessed
+                            from any location. Web-based school management software is the best way to manage a school in a productive, systematic and organized manner.
+                        </p>
+                    </div>
+
+                    <br>
+                    <div class="card p-3 bg-danger text-white">
+                        <h2 class="page-header">Inventory Software</h2>
+                        <img src="~/Img/Products/inventorySw.png" class="serv1">
+                        <p>
+                            In lacinia ipsum sit amet ultricies semper. Nulla facilisi. Proin et nulla consequat mauris gravida vestibulum. Donec
+                            non risus et velit auctor lobortis. Aliquam in placerat justo. Etiam nisi libero, suscipit vel nulla eget, blandit
+                            ultricies quam. Nunc pretium pharetra tellus sed suscipit. Fusce rhoncus metus est, quis facilisis eros luctus vestibulum.
+                            Morbi vestibulum, urna vitae feugiat tincidunt, urna magna pharetra enim, id congue lectus elit sit amet quam. Vivamus
+                            sit amet enim eros. Etiam nec molestie risus.
+                        </p>
+                    </div>
+
+                    <br>
+                    <div class="card p-3 bg-danger text-white">
+                        <h2 class="page-header">Security Tokens(E-Token/M-Token)</h2>
+                        <img src="~/Img/Products/m-token.jfif" class="serv1">
+                        <p>
+                            Security tokens are physical devices used to gain access to an electronically
+                            restricted resource. The token is used in addition to or in place of a password.
+                            It acts like an electronic key to access something. Examples include a wireless keycard
+                            opening a locked door, or in the case of a customer trying to access their bank account
+                            online, the use of a bank provided token can prove that the customer is who they claim to be.
+                            Some tokens may store cryptographic keys, such as a digital signature, or biometric data,
+                            such as fingerprint details. Some may also store passwords.Some designs\tamper resistant
+                            packaging, while others may include small keypads to allow entry of a PIN or a
+                            simple button to start a generating routine with some display capability to show a
+                            generated key number. Special designs include a USB connector, RFIDfunctions or Bluetooth
+                            wireless interface to enable transfer of a generated key number sequence to a client system.
+                        </p>
+                    </div>
+                    <br>
+                    <div class="card p-3 bg-danger text-white">
+                        <h2 class="page-header">IET (Import & Export Trade under DGFT) Certificate Provider</h2>
+                        <img src="~/Img/Products/importandExp.jpg" class="serv1">
+                        <p>
+                            Digital Certificate is required to digitally sign any document in electronic format
+                            or for transactions being performed through a web-browser.
+                            For DGFT website, EXIM Organization, Imports, Exports, Reduce Licence Fee
+                        </p>
+                    </div>
+                    <br>
+                    <div class="card p-3 bg-danger text-white">
+                        <h2 class="page-header">Documents Signer Certificate Provider</h2>
+                        <img src="~/Img/Products/docsigner.png" class="serv1">
+                        <p>
+                            The Document Signer Certificates are issued to organizational software applications for
+                            operating automatically to authenticate documents/information attributed to the
+                            organisation by using Digital Signature applied to the documents.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <br>
+
+
+
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="py-4 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>Copyright 2018 &copy; Arise Tech Solutions</p>
+                </div> <!-- .col -->
+            </div> <!-- .row -->
+        </div> <!-- .container -->
+    </footer>
+
+    <script src="~/Scripts/jquery.min.js"></script>
+    <script src="~/Scripts/popper.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+
+
+</html>

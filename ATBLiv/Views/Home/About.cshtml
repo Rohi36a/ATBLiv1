@@ -1,0 +1,372 @@
+﻿<!DOCTYPE html>
+
+@{
+    ViewBag.Title = "About";
+    Layout = null;
+}
+@Html.Raw(TempData["msg"])
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arise Tech Solutions Theme</title>
+    <link rel="stylesheet" href="~/Content/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Content/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/slick.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/slick-theme.css" />
+    <link rel="stylesheet" href="~/Content/style.css">
+    <style>
+        p {
+            font-size: 14px;
+            line-height: 20px;
+            /* background-color: #f0e68c; */
+            text-align: justify;
+        }
+
+    </style>
+   
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            /*border: 1px solid #e7e7e7;*/
+            /*background-color: #f3f3f3;*/
+            list-style-type: square;
+            list-style-position: outside;
+            list-style-image: none;
+        }
+
+
+
+        li {
+            float: left;
+        }
+
+            li a {
+                display: block;
+                color: #b6ff00;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                li a:hover:not(.active) {
+                    background-color: #ddd;
+                }
+
+                li a.active {
+                    color: white;
+                    background-color: #4CAF50;
+                }
+
+           
+
+    </style>
+
+    <style>
+       
+    </style>
+
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container">
+            <!-- <a href="index.html" class="navbar-brand">Arise Tech Solutions</a> -->
+            <section>
+                <div class="col-lg-2">
+                    <img class="logo" src="~/Img/mainlogo.png" height="100" width="100">
+                </div>
+            </section>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Arise Tech Solutions-navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="Arise Tech Solutions-navbar" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li>
+                        @Html.ActionLink("Home", "Home", "Home")
+                    </li>
+                    <li class="active">
+                        @Html.ActionLink("About", "About", "Home")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Services", "Services", "Home")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Products", "Products", "Home")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Partners", "Partners", "Home")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Contact", "Contact", "Home")
+                    </li>
+                </ul>
+            </div> <!-- #Arise Tech Solutions-navbar -->
+        </div> <!-- container -->
+    </nav>
+
+    <!-- ABOUT US HERO-->
+    <section id="about-us" class="p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h1>About Us</h1>
+                    <p>
+                        Arise Tech Solution is a company incorporated in India and having its registered oﬃce in Hoshangabad (M.P),
+                        India, organization. It was established realising the need to deliver technology enabled innovative and holistic business
+                        solutions, by leveraging its core expertise and that of its associates, in diverse domains.
+                    </p>
+
+                    <p>
+                        The organization has developed itself as a multi-disciplinary consultancy ﬁrm, providing services related to IT Infrastructure
+                        solutions, Online services and website and customized software development. It is recognized as a leading partner in
+                        providing innovative, sustainable and aﬀordable solutions that impact communities in a positive way and, forging transparent
+                        and trusted relations with all its associates.
+                    </p>
+                </div> <!-- .col -->
+            </div> <!-- .row -->
+        </div> <!-- .container -->
+    </section>
+
+    <!-- WHAT WE DO -->
+    <section id="what-we-do">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mt-3">
+                    <h1>What We Do</h1>
+                    <p>Arise tech Solution is a service-&-product oriented organization dedicated to providing smart, functional and efficient information technology solutions to the customers.</p>
+                    <p>We delivers real and measurable results that matter to our clients and. Today, business is not just dependent upon technology; it has become intrinsically intermingled with technology. Technology infrastructure is the critical fiber, fuel, and foundation for the business engine of today and of the future. We are passionate in our beliefs that IT portfolios must be held to the standards of free and efficient markets, and that organizational inefficiency and obsolete processes drastically limit enterprise value contribution in most IT organizations</p>
+                </div> <!-- .col-md-6 -->
+                <div class="col-md-6 mb-3">
+                    <img src="~/Img/business8.jpg" alt="Professional shot of men in suits" class="img-fluid rounded-circle">
+                </div> <!-- .col-md-6 -->
+            </div> <!-- .row -->
+        </div> <!-- .container -->
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="row mb-4">
+
+                <!-- <div class="col-md-4">
+                    <div class="card bg-danger text-white text-center">
+                        <div class="card-body">
+                            <i class="fa fa-building"></i>
+                            <h3>Lorem Ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, architecto.</p>
+                        </div>
+                    </div>
+                </div>
+                 -->
+                <style>
+
+                    /*body {
+                        padding: 50px 100px;
+                        font-family: sans-serif;
+                        font-size: 2em;
+                        color: #333;
+                        background: #f7f7f7;
+                    }*/
+
+                    .container {
+                        text-align: center;
+                    }
+
+                        .container ul.myLst {
+                            display: inline-block;
+                            /* One most likely needs to realign flow content */
+                            text-align: initial;
+                        }
+
+                    h1 {
+                        color: #0074D9;
+                    }
+
+                    ul.myLst,
+                    ul.myLst li {
+                        padding: 0;
+                        margin: 0;
+                        list-style: none;
+                    }
+
+                    ul.myLst {
+                        margin: 2em 0;
+                    }
+
+                    ul.myLst li {
+                        margin: 1em;
+                        margin-left: 3em;
+                    }
+
+                    ul.myLst li:before {
+                        content: '\f006';
+                        font-family: 'FontAwesome';
+                        float: left;
+                        margin-left: -1.5em;
+                        color: #0074D9;
+                    }
+
+                   
+
+                       
+                </style>
+                <div class="row-md-4">
+                    <div class="col-md-6">
+                        <div class="block block-light block-center">
+                            <i class="fa fa-line-chart fa-primary fa-6 fa-border"></i>
+                            <h3>
+                                Competitive Edge
+                            </h3>
+                            <p></p>
+                            <ul class="myLst">
+                                <li>
+                                    Vast experience, professionalism and commitment of our staﬀ.
+                                </li>
+                                <li>
+                                    Developing bespoke approach, methodology and, quality assurance and quality control systems.
+                                </li>
+                                <li>
+                                    Developing innovative solutions and integrate state of the art technologies.
+                                </li>
+                                <li>
+                                    Meet tight project schedules and Timelines.
+                                </li>
+                                <li>
+                                    Excellent documentation.
+                                </li>
+                                <li>
+                                    Expertise in interfacing with clients and managing geographically scattered teams.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="block block-light block-center">
+                        <i class="fa fa-bullseye fa-primary fa-6 fa-border"></i>
+                        <h3>Mission</h3>
+                        <p></p>
+
+                        <ul class="myLst">
+
+                            <li>
+                                Provide professional design and project management consultancy services.
+                            </li>
+                            <li>
+                                Emerge as a preferred technology partner for small, medium and large enterprises.
+                            </li>
+                            <li>
+                                Consistently deliver quality and value.
+                            </li>
+                            <li>
+                                Build talented and skilled professionals in all relevant ﬁelds.
+                            </li>
+                            <li>
+                                Eliminate all forms of discriminations and, promote tolerance and mutual respect for each other.
+                            </li>
+                            <li>
+                                Build talented and skilled professionals in all relevant ﬁelds.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="block block-light block-center">
+                        <i class="fa fa-thumbs-o-up fa-primary fa-6 fa-border"></i>
+                        <h3>
+                            Quality Policy
+                        </h3>
+                        <p></p>
+                        <ul class="myLst">
+                            <li>
+                                We shall consistently endeavour to fulﬁll our interested parties requirements and strive to meet their expectations
+                                at all times through dedication, commitment, anticipation, ﬂexibility and maintain excellent relationship.
+                            </li>
+                            <li>
+                                We shall constantly adapt, innovate and reﬁne our approach and methodology in every aspect of work, in line with national
+                                and international standards, practices and, maintain transparency, credibility and leadership in what we do.
+                            </li>
+                            <li>
+                                We shall practice equality and diversity, and commit ourselves to be transparent, fair and honest in all our actions.
+                            </li>
+                            <li>
+                                We shall be aware of our responsibilities, hold ourselves accountable and, abide by all statutory and legal regulations.
+                                .
+                            </li>
+                            <li>
+                                We shall strive to continually improve our Quality Management System by adapting a risk based thinking approach.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> <!-- .row -->
+
+        </div> <!-- .container -->
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="bg-dark text-white py-4">
+        <div class="container">
+            <h2 class="text-center">Testimonials</h2>
+            <div class="row">
+                <div class="col">
+                    <div class="slider">
+                        <div>
+                            <blockquote class="blockquote">
+                                <p class="mb-0">We Grow Along With You</p>
+                                <footer class="blockquote-footer">
+                                    Shailendra Singh Rajput
+                                </footer>
+                            </blockquote>
+                        </div>
+                        <!-- <div>
+                            <blockquote class="blockquote">
+                                <p class="mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit!</p>
+                                <footer class="blockquote-footer">
+                                    Steve Smith from <cite title="Company 2">Company 2</cite>
+                                </footer>
+                            </blockquote>
+                        </div>
+                        <div>
+                            <blockquote class="blockquote">
+                                <p class="mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit!</p>
+                                <footer class="blockquote-footer">
+                                    Meagan Williams from <cite title="Company 3">Company 3</cite>
+                                </footer>
+                            </blockquote>
+                        </div> -->
+                    </div> <!-- .slider -->
+                </div> <!-- .col -->
+            </div> <!-- .row -->
+        </div> <!-- .container -->
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="py-4 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>Copyright 2018 &copy; Arise Tech Solutions</p>
+                </div> <!-- .col -->
+            </div>  <!-- .row -->
+        </div> <!-- .container -->
+    </footer>
+
+    <script src="~/Scripts/jquery.min.js"></script>
+    <script src="~/Scripts/popper.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/slick.min.js"></script>
+    <script src="~/Scripts/about.js"></script>
+</body>
+</html>
+

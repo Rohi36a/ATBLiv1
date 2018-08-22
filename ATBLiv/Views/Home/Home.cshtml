@@ -1,0 +1,458 @@
+﻿<!DOCTYPE html>
+
+@{
+    ViewBag.Title = "About";
+    Layout = null;
+}
+@Html.Raw(TempData["msg"])
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arise Tech Solutions Theme</title>
+    <link rel="stylesheet" href="~/Content/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Content/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+    <link rel="stylesheet" href="~/Content/style.css">
+    <style>
+        .serv1 {
+            width: 200px;
+            height: 200px;
+        }
+
+            /* resize images */
+            .serv1 img {
+                width: 200%;
+                height: 200%;
+            }
+    </style>
+
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            /*border: 1px solid #e7e7e7;*/
+            /*background-color: #f3f3f3;*/
+        }
+
+        li {
+            float: left;
+        }
+
+            li a {
+                display: block;
+                color: #b6ff00;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                li a:hover:not(.active) {
+                    background-color: #ddd;
+                }
+
+                li a.active {
+                    color: white;
+                    background-color: #4CAF50;
+                }
+    </style>
+</head>
+<body>
+
+
+    <!-- NAVIGATION -->
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container">
+            <section>
+                <div class="col-lg-2">
+                    <img class="logo" src="~/Img/mainlogo.png" height="100" width="100">
+                </div>
+                @* <a href="index.html" class="navbar-brand">Arise Tech Solutions</a>*@
+            </section>
+
+            <button class="navbar-toggler" type="btn1" data-toggle="collapse" data-target="#Arise Tech Solutions-navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="Arise Tech Solutions-navbar" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="active">
+                        @Html.ActionLink("Home", "Home", "Home")
+                    </li>
+                    <li>
+                        @Html.ActionLink("About", "About", "Home")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Services", "Services", "Home")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Products", "Products", "Home")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Partners", "Partners", "Home")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Contact", "Contact", "Home")
+                    </li>
+                </ul>
+            </div> <!-- #Arise Tech Solutions-navbar -->
+        </div> <!-- container -->
+    </nav>
+
+
+    <!-- HERO CAROUSEL -->
+
+    <section id="hero">
+        <div id="heroCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#heroCarousel" data-slide-to="0"></li>
+                <li data-target="#heroCarousel" data-slide-to="1" class="active"></li>
+                <li data-target="#heroCarousel" data-slide-to="2"></li>
+                <li data-target="#heroCarousel" data-slide-to="3"></li>
+                <li data-target="#heroCarousel" data-slide-to="4"></li>
+                <li data-target="#heroCarousel" data-slide-to="5"></li>
+                <li data-target="#heroCarousel" data-slide-to="6"></li>
+                <li data-target="#heroCarousel" data-slide-to="7"></li>
+                <li data-target="#heroCarousel" data-slide-to="8"></li>
+                <li data-target="#heroCarousel" data-slide-to="9"></li>
+                <li data-target="#heroCarousel" data-slide-to="10"></li>
+                <li data-target="#heroCarousel" data-slide-to="11"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item carousel-image-1 active">
+                    <div class="container">
+
+                        <div class="overlay"></div>
+                        <div class="carousel-caption" style="background-color:lightseagreen">
+                            <h2>Digital Signature Certificate (Class - 2 and Class - 3)</h2>
+                        </div>
+                    </div> <!-- .container -->
+                </div> <!-- .carousel-item -->
+                <div class="carousel-item carousel-image-2">
+                    <div class="container">
+
+                        <div class="overlay"></div>
+                        <div class="carousel-caption" style="background-color:lightseagreen">
+                            <h2>E-Registry</h2>
+                        </div>
+                    </div> <!-- .container -->
+                </div> <!-- .carousel-item -->
+                <div class="carousel-item carousel-image-3">
+                    <div class="container">
+
+                        <div class="overlay"></div>
+                        <div class="carousel-caption" style="background-color:lightseagreen">
+                            <h2>E-Stamp</h2>
+                        </div>
+
+                    </div> <!-- .container -->
+                </div> <!-- .carousel-item -->
+
+
+                <div class="carousel-item carousel-image-4">
+                    <div class="container">
+
+                        <div class="overlay"></div>
+                        <div class="carousel-caption" style="background-color:lightseagreen">
+                            <h2>E-Tender</h2>
+                        </div>
+
+                    </div> <!-- .container -->
+                </div> <!-- .carousel-item -->
+
+
+                <div class="carousel-item carousel-image-5">
+                    <div class="container">
+
+                        <div class="overlay"></div>
+                        <div class="carousel-caption" style="background-color:lightseagreen">
+                            <h2>Employee Provident Fund</h2>
+                        </div>
+
+                    </div> <!-- .container -->
+                </div> <!-- .carousel-item -->
+
+
+                <div class="carousel-item carousel-image-6">
+                    <div class="container">
+
+                        <div class="overlay"></div>
+                        <div class="carousel-caption" style="background-color:lightseagreen">
+                            <h2>GST Registration & Filing</h2>
+                        </div>
+
+                    </div> <!-- .container -->
+                </div> <!-- .carousel-item -->
+
+
+                <div class="carousel-item carousel-image-7">
+                    <div class="container">
+
+                        <div class="overlay"></div>
+                        <div class="carousel-caption" style="background-color:lightseagreen">
+                            <h2>Income tax Return Filing & Consulting</h2>
+                        </div>
+
+                    </div> <!-- .container -->
+                </div> <!-- .carousel-item -->
+
+
+
+
+                <div class="carousel-item carousel-image-8">
+                    <div class="container">
+
+                        <div class="overlay"></div>
+                        <div class="carousel-caption" style="background-color:lightseagreen">
+                            <h2>IT Annual Maintenance Contract (AMC)</h2>
+                        </div>
+
+                    </div> <!-- .container -->
+                </div> <!-- .carousel-item -->
+
+
+                <div class="carousel-item carousel-image-9">
+                    <div class="container">
+
+                        <div class="overlay"></div>
+                        <div class="carousel-caption" style="background-color:lightseagreen">
+                            <h2>IT Inftrastructure</h2>
+                        </div>
+
+                    </div> <!-- .container -->
+                </div> <!-- .carousel-item -->
+
+
+
+
+                <div class="carousel-item carousel-image-10">
+                    <div class="container">
+
+                        <div class="overlay"></div>
+                        <div class="carousel-caption" style="background-color:lightseagreen">
+                            <h2>Network Inftrastructure</h2>
+                        </div>
+
+                    </div> <!-- .container -->
+                </div> <!-- .carousel-item -->
+
+
+
+
+                <div class="carousel-item carousel-image-11">
+                    <div class="container">
+
+                        <div class="overlay"></div>
+                        <div class="carousel-caption" style="background-color:lightseagreen">
+                            <h2>Passport Services</h2>
+                        </div>
+
+                    </div> <!-- .container -->
+                </div> <!-- .carousel-item -->
+
+
+
+
+                <div class="carousel-item carousel-image-12">
+                    <div class="container">
+
+                        <div class="overlay"></div>
+                        <div class="carousel-caption" style="background-color:lightseagreen">
+                            <h2>Shop Registration</h2>
+                        </div>
+
+                    </div> <!-- .container -->
+                </div> <!-- .carousel-item -->
+
+
+            </div> <!-- .carousel-inner -->
+            <a href="#heroCarousel" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a href="#heroCarousel" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div> <!-- #heroCarousel -->
+    </section> <!-- #hero -->
+    <!-- INFORMATION -->
+
+    <section id="info" class="py-5">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-4 mb-4 text-left">
+                    <i class="fa fa-cog mb-2"></i>
+                    <h3>Turning Gears</h3>
+                    <p>We move your requirements smoother</p>
+                </div>
+                <div class="col-md-4 mb-4 text-left">
+                    <i class="fa fa-cloud mb-2"></i>
+                    <h3>Sending Data</h3>
+                    <p>We connect your data online</p>
+                </div>
+                <div class="col-md-4 mb-4 text-left">
+                    <i class="fa fa-cart-plus mb-2"></i>
+                    <h3>Making Money</h3>
+                    <p>We move our and your business</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CALL TO ACTION -->
+
+    <section id="call-to-action">
+        <div class="dark-overlay p-5">
+            <div class="row">
+                <div class="col">
+                    <div class="container">
+                        <h1>Are You Ready To Get Started?</h1>
+                        <!-- <p class="d-none d-md-block">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo reiciendis id est impedit voluptatem quisquam similique quam maiores voluptate quaerat.</p> -->
+                    </div> <!-- .container -->
+                </div> <!-- .col -->
+            </div> <!-- .row -->
+        </div>
+    </section> <!-- #call-to-action -->
+    <!-- PRODUCT INFO -->
+
+    <section id="product-info" class="py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 my-auto">
+                    <h3>We help customers around the world to become competitive and stay competitive</h3>
+                    <p>We combine best-in-class innovative technology with digital strategy and experience design services</p>
+                    <!-- <a href="#" class="btn btn-outline-danger btn-lg">Learn More</a> -->
+                </div>
+                <div class="col-md-6">
+                    <img src="~/Img/getty/passport.jpg" alt="Picture of a laptop" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- VIDEO LINK -->
+    <!-- <section id="video">
+        <div class="dark-overlay p-5">
+            <div class="row">
+                <div class="col">
+                    <div class="container">
+                        <a
+                        href="#"
+                        class="video"
+                        data-video="https://www.youtube.com/embed/HnwsG9a5riA"
+                        data-toggle="modal"
+                        data-target="#videoModal">
+                            <i class="fa fa-play"></i>
+                        </a>
+                        <h1 class="mt-0">See What We Do</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  -->
+    <!-- PHOTO GALLERY -->
+    <!--
+        <section id="gallery" class="py-5 text-center">
+            <div class="container">
+                <h1>Photo Gallery</h1>
+                <p>Check out our photos</p>
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <a href="img/business1.jpg" data-toggle="lightbox" data-gallery="img-gallery">
+                            <img src="~/Img/business1.jpg" alt="Business Suit" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="img/business2.jpg" data-toggle="lightbox" data-gallery="img-gallery">
+                            <img src="~/Img/business2.jpg" alt="Business Suit" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="img/business3.jpg" data-toggle="lightbox" data-gallery="img-gallery">
+                            <img src="~/Img/business3.jpg" alt="Business Suit" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <a href="img/business4.jpg" data-toggle="lightbox" data-gallery="img-gallery">
+                            <img src="~/Img/business4.jpg" alt="Business Suit" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="img/business5.jpg" data-toggle="lightbox" data-gallery="img-gallery">
+                            <img src="~/Img/business5.jpg" alt="Business Suit" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="img/business6.jpg" data-toggle="lightbox" data-gallery="img-gallery">
+                            <img src="~/Img/business6.jpg" alt="Business Suit" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>  -->
+    <!-- SIGN UP FORM -->
+    <!-- <section id="sign-up" class="p-5 text-center bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col"> -->
+    <!-- <h1>Sign Up For Our Newsletter</h1> -->
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus libero, maxime eligendi ullam atque dolorem. Neque dolorem maxime repudiandae. Lorem ipsum dolor sit amet.  </p> -->
+    <!-- <br>
+    <form class="form-inline justify-content-center">
+        <label for="name" class="sr-only">Name</label>
+        <input type="text" class="form-control mb-2 mb-sm-0 mr-sm-2" placeholder="Enter Name">
+        <label for="email" class="sr-only">Email</label>
+        <input type="email" class="form-control mb-2 mb-sm-0 mr-sm-2" placeholder="Enter Email">
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form> -->
+    </div> <!-- .col -->
+    </div> <!-- .row -->
+    </div> <!-- .container -->
+    </section> <!-- #sign-up -->
+    <!-- FOOTER -->
+
+    <footer id="main-footer" class="py-4 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>Copyright 2018 &copy; Arise Tech Solutions</p>
+                </div> <!-- .col -->
+            </div>  <!-- .row -->
+        </div> <!-- .container -->
+    </footer>
+
+
+    <!-- VIDEO MODAL -->
+
+    <div class="modal fade" id="videoModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" data-dismiss="modal" aria-label="close"><span aria-hidden="true">&times;</span></button>
+
+                    <iframe src="" frameborder="0" height="350" width="100%" allowfullscreen></iframe>
+
+                </div> <!-- .modal-body -->
+            </div> <!-- .modal-content -->
+        </div> <!-- .modal-dialog -->
+    </div> <!-- #videoModal -->
+
+    <script src="~/Scripts/jquery.min.js"></script>
+    <script src="~/Scripts/popper.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+    <script src="~/Scripts/main.js"></script>
+</body>
+
+</html>

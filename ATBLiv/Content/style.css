@@ -1,0 +1,182 @@
+body {
+  overflow-x: hidden; }
+
+.navbar .nav-link {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 1em !important;
+  padding-right: 1em !important; }
+
+.navbar .nav-item.active {
+  border-left: 3px solid #444; }
+
+.carousel-item {
+  height: 450px; }
+
+.carousel-image-1 {
+  background-image: url("../img/getty/ds1.jpg");
+  background-size: cover; 
+}
+
+.carousel-image-2 {
+  background-image: url("../img/getty/E-Registry2.jpg");
+  background-size: cover; }
+
+.carousel-image-3 {
+  background-image: url("../img/getty/E-Stamp.jpg");
+  background-size: cover; }
+
+
+.carousel-image-4 {
+  background-image: url("../img/getty/E-tender2.jpg");
+  background-size: cover; }
+
+
+.carousel-image-5 {
+  background-image: url("../img/getty/EPF.jpg");
+  background-size: cover; }
+
+
+  .carousel-image-6 {
+    background-image: url("../img/getty/GSTRegistration.jpg");
+    background-size: cover; }
+  .carousel-image-7 {
+    background-image: url("../img/getty/incometaxfiling.jpg");
+    background-size: cover; }
+  .carousel-image-8 {
+    background-image: url("../img/getty/ITAnnualMaintanence.jpg");
+    background-size: cover; }
+  .carousel-image-9 {
+    background-image: url("../img/getty/itinfra3.jpg");
+    background-size: cover; }
+
+  .carousel-image-10 {
+    background-image: url("../img/getty/networkinfra.jpg");
+    background-size: cover; }
+
+  .carousel-image-11 {
+    background-image: url("../img/getty/passport.jpg");
+    background-size: cover; }
+
+    .carousel-image-12 {
+      background-image: url("../img/getty/shopregistration.jpg");
+      background-size: cover; }
+
+.fa {
+  font-size: 55px; }
+
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.7); }
+
+#call-to-action {
+  background-image: url("../img/lights.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #FFF; }
+
+#video {
+  background-image: url("../img/media.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 0 -300px;
+  text-align: center;
+  color: #fff; }
+  #video a {
+    color: #fff; }
+
+#about-us, #services {
+  background-image: url("../img/image1.jpg");
+  background-attachment: fixed;
+  background-position: 0 -360px;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #FFF; }
+
+#sign-up {
+  background-color: #2F3439; }
+
+#main-footer {
+  background-color: #000;
+  color: #FFF; }
+
+#what-we-do img {
+  margin-top: -30px; }
+
+#faq #faq-accordion-1 .card, #faq #faq-accordion-2 .card {
+  border-color: #333; }
+
+#faq #faq-accordion-1 .card-header, #faq #faq-accordion-1 .card-body, #faq #faq-accordion-2 .card-header, #faq #faq-accordion-2 .card-body {
+  background-color: #333; }
+
+#faq #faq-accordion-1 .card-header a, #faq #faq-accordion-2 .card-header a {
+  color: #fff; }
+
+#faq #faq-accordion-1 .card-header a:hover, #faq #faq-accordion-2 .card-header a:hover {
+  text-decoration: none; }
+
+
+  
+.serv1 {
+  width: 200px;
+  height: 200px;
+}
+
+/* resize images */
+.serv1 img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.btn1{
+  float: right;
+}
+
+    
+        p {
+            font-size: 14px;
+            line-height: 20px;
+            /* background-color: #f0e68c; */
+            text-align: justify;
+                
+        }
+
+
+
+
+/* scrolling script */
+
+        .holder { 
+          background-color:#ccc;
+          width:300px;
+          height:250px;
+          overflow:hidden;
+          padding:10px;
+          font-family:Helvetica;
+        }
+        .holder .mask {
+          position: relative;
+          left: 0px;
+          top: 10px;
+          width:300px;
+          height:240px;
+          overflow: hidden;
+        }
+        .holder ul {
+          list-style:none;
+          margin:0;
+          padding:0;
+          position: relative;
+        }
+        .holder ul li {
+          padding:10px 0px;
+        }
+        .holder ul li a {
+          color:darkred;
+          text-decoration:none;
+        }
+
+
+     

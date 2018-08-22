@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+
+@{
+    ViewBag.Title = "Partners";
+    Layout = null;
+}
+@Html.Raw(TempData["msg"])
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arise Tech Solutions Theme</title>
+    <link rel="stylesheet" href="~/Content/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Content/bootstrap.css">
+    <link rel="stylesheet" href="~/Content/style.css">
+    <style>
+        center1 {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100px;
+        }
+    </style>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            /*border: 1px solid #e7e7e7;*/
+            /*background-color: #f3f3f3;*/
+        }
+
+        li {
+            float: left;
+        }
+
+            li a {
+                display: block;
+                color: #b6ff00;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                li a:hover:not(.active) {
+                    background-color: #ddd;
+                }
+
+                li a.active {
+                    color: white;
+                    background-color: #4CAF50;
+                }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container">
+            <!-- <a href="index.html" class="navbar-brand">Arise Tech Solutions</a> -->
+            <section>
+                <div class="col-lg-2">
+                    <img class="logo" src="~/Img/mainlogo.png" height="100" width="100">
+                </div>
+            </section>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Arise Tech Solutions-navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="Arise Tech Solutions-navbar" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li>
+                        @Html.ActionLink("Home", "Home", "Home")
+                    </li>
+                    <li>
+                        @Html.ActionLink("About", "About", "Home")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Services", "Services", "Home")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Products", "Products", "Home")
+                    </li>
+                    <li class="active">
+                        @Html.ActionLink("Partners", "Partners", "Home")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Contact", "Contact", "Home")
+                    </li>
+                </ul>
+            </div> <!-- #Arise Tech Solutions-navbar -->
+        </div> <!-- container -->
+    </nav>
+
+    <!-- BLOG HERO-->
+    <section id="services" class="p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-left">
+                    <h1>Partners</h1>
+                    @*<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, saepe.</p>*@
+                </div> <!-- .col -->
+            </div> <!-- .row -->
+        </div> <!-- .container -->
+    </section>
+    <br>
+    <section class="section-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+
+                    <div class="card p-3 bg-primary text-white">
+                        <h2 class="page-header">Capricorn Identity Services Pvt Ltd</h2>
+                        <img src="~/Img/Partners/capricorn2.png" class="serv1">
+                        <br>
+                        <div class="justify">
+                            Certificate.Digital is a brand and domain owned by Capricorn Identity Services Pvt. Ltd.
+                            and we are a Licensed Certifying Authority (CA) under IT Act, 2000.
+                            The promoters have over 26 years experience in Information Technology and the company
+                            has technopreneur advantage in the Industry.
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card p-3 bg-primary text-white">
+                        <h2 class="page-header">Vclimbers Technology</h2>
+                        <img src="~/Img/Partners/VclimberPics.jpg" class="serv1">
+                        <br>
+                        <div class="justify">
+                            VCLIMBERS is a premium design company that focuses on high quality, innovation, & velocity. We utilized know-how to convey outcomes to develop our clientele companies. We pleasure ourselves in nice work ethic, integrity, and end-results. We provide a variety of Digital Advertising, Marketing & Web Development Services. School Management software Online/Offline Our companies embody Website design, Web Development, Social media advertising, web optimization & extra.
+                            Certificate.Digital is a brand and domain owned by Capricorn Identity Services Pvt. Ltd. and we are a Licensed Certifying Authority (CA) under IT Act, 2000.
+                            The promoters have over 26 years experience in Information Technology and the company has technopreneur advantage in the Industry.
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card p-3 bg-primary text-white">
+                        <h2 class="page-header">MP Online Pvt. Ltd.</h2>
+                        <img src="~/Img/Partners/mponline.jpg" class="serv1">
+                        <br>
+                        <div class="justify">
+                            MPOnline Limited took the opportunity of conceptualizing
+                            the e-Governance initiative
+                            of Government of Madhya Pradesh, by designing a unique portal to serve various
+                            Government Departments and to make their services reach at the doorstep of the
+                            common man. MPOnline Ltd, is a Joint venture company between the Government of
+                            Madhya Pradesh (Gov. MP) and TATA Consultancy Services Limited (TCS) which
+                            frequently develops and operates the official portal for the Government of
+                            Madhya Pradesh. Set up in the year July 2006, till date have reached almost all
+                            the corners of Madhya Pradesh providing wide range of support
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card p-3 bg-primary text-white">
+                        <h2 class="page-header">Common Service Centres (CSC)</h2>
+                        <img src="~/Img/Partners/csc.jpg" class="serv1">
+                        <div class="justify">
+                            Common Service Centres (CSC) scheme is one of the mission mode projects under the Digital India Programme.
+                            CSCs are the access points for delivery of essential public utility services, social welfare schemes, healthcare, financial, education and agriculture services, apart from host of B2C services to citizens in rural and remote areas of the country. It is a pan-India network catering to regional, geographic, linguistic and cultural diversity of the country, thus enabling the Government’s mandate of a socially, financially and digitally inclusive society.
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <br>
+    <!-- FOOTER -->
+    <footer id="main-footer" class="py-4 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>Copyright 2018 &copy; Arise Tech Solutions</p>
+                </div> <!-- .col -->
+            </div> <!-- .row -->
+        </div> <!-- .container -->
+    </footer>
+
+    <script src="~/Scripts/jquery.min.js"></script>
+    <script src="~/Scripts/popper.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>
