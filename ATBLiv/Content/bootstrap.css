@@ -3937,7 +3937,7 @@ button.close {
   display: none;
   align-items: center;
   width: 100%;
-  transition: transform 0.2s ease;
+  transition: transform 0.1s ease;
   backface-visibility: hidden;
   perspective: 1000px; }
 
